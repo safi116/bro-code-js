@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      .active{
+        color: green;
+      }
+    </style>
+</head>
+<body>
+    <marquee behavior="" direction="" scrollamount = "20" loop = "120s" style="background-color: red; font-size: 25px;">Safi</marquee>
+<h1 class="h1">SAFI</h1>
+<button class="btn">button</button>
+</body>
+</html>
+<script>
+let btn = document.querySelector(".btn");
+let h1 = document.querySelector(".h1");
+let check = 0;
+btn.addEventListener("click",()=>{
+ h1.classList.toggle("active");
+ if(check == 0){
+    h1.innerHTML = "SAFI";
+    check = 1;
+ }
+ else{
+    h1.innerHTML = "ALI";
+    check = 0;
+ }
+});
+</script>
